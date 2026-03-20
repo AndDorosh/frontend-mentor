@@ -1,0 +1,23 @@
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    width: 326px;
+    background-color: hsl(225, 10%, 92%);
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.profile-card__image {
+    margin: 0 0 150px;
+}
+
+.profile-card__avatar {
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: 80px;
+    border: 4px solid hsl(225, 10%, 92%);
+}

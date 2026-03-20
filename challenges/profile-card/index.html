@@ -1,35 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
+    <title>Profile card component</title>
+  </head>
+  <body>
+    <h1 class="visually-hidden">Profile card</h1>
 
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="profile-card">
+      <img
+        class="profile-card__image"
+        src="./assets/bg-pattern-card.svg"
+        alt="bubbles"
+      />
+      <img
+        class="profile-card__avatar"
+        src="./assets/image-victor.jpg"
+        alt="Victor"
+      />
+      <div class="profile-card__personal-info-wrap">
+        <h2 class="profile-card__name">Victor Crest</h2>
+        <span class="profile-card__age">26</span>
+      </div>
+      <span class="profile-card__city">London</span>
+      <div class="profile-card__social-media">
+        <div class="profile-card__social-media-wrap">
+          <span class="profile-card__social-media-counter"> 80К </span>
+          <span class="profile-card__social-media-label"> Followers </span>
+        </div>
+        <div class="profile-card__social-media-wrap">
+          <span class="profile-card__social-media-counter"> 803К </span>
+          <span class="profile-card__social-media-label"> Likes </span>
+        </div>
+        <div class="profile-card__social-media-wrap">
+          <span class="profile-card__social-media-counter"> 1.4К </span>
+          <span class="profile-card__social-media-label"> Photos </span>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
